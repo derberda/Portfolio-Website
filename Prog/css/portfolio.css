@@ -1,0 +1,213 @@
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 923px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0;
+        grid-template-areas: "Portfolio";
+    }
+    .Portfolio {
+        grid-area: Text;
+        margin: 50% 0% 50% 27%;
+        /* padding-right: 10%; */
+    }
+    @media all and (-ms-high-contrast:none) {
+        .grid-container {
+            display: -ms-grid;
+            -ms-grid-columns: 1fr;
+            -ms-grid-rows: 0;
+        }
+        .Portfolio {
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+        }
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        background: url(../img/bg.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    
+    /* section 2 */
+    
+    .grid-container_01 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0;
+        grid-template-areas: "Portfolio";
+    }
+    
+    .Portfolio {
+        grid-area: Text;
+        margin: 50% 0% 50% 0%;
+        /* padding-right: 10%; */
+    }
+    
+    #ud_tab {
+        max-width: 10rem;
+        width: 90%;
+        position: absolute;
+        top: 125%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        height: 300px;
+    }
+    
+    #ud_tab input[type="radio"] {
+        display: none;
+    }
+    
+    #ud_tab label {
+        display: block;
+        float: left;
+        width: 25%;
+        color: #666;
+        font-size: 20px;
+        padding: 5%;
+        font-weight: normal;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        background: #252a34;
+    }
+    
+    #ud_tab .ud_content {
+        background: #fff;
+        width: 90%;
+        display: none;
+        padding: 5%;
+        float: left;
+        font-size: 1.5rem;
+    }
+    
+    #ud_tab .ud_content h3 {
+        margin: 0;
+        padding: 0 0 5% 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 1000;
+    }
+    
+    #ud_tab .ud_content p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        color: #666;
+        line-height: 25px;
+        word-spacing: 3px;
+    }
+    
+    #ud_tab [id^="tab"]:checked+label {
+        background: #ff2e63;
+        color: #fff;
+    }
+    
+    #tab1:checked~#ud_tab-content1, #tab2:checked~#ud_tab-content2, #tab3:checked~#ud_tab-content3, #tab4:checked~#ud_tab-content4 {
+        display: block;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+/* @media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 924px) {
+    @media all and (-ms-high-contrast: none) {
+        .grid-container {
+            display: -ms-grid;
+            -ms-grid-columns: 1fr;
+            -ms-grid-rows: 0;
+        }
+        .Portfolio {
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 1;
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 1;
+        }
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        background: url(../img/bg.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    /* section 2 */
+    .grid-container_01 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0;
+        grid-template-areas: "Portfolio";
+    }
+    .Portfolio {
+        grid-area: Text;
+        margin: 50% 0% 50% 0%;
+        /* padding-right: 10%; */
+    }
+    #ud_tab {
+        max-width: 100rem;
+        width: 90%;
+        position: absolute;
+        top: 125%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        height: 300px;
+    }
+    #ud_tab input[type="radio"] {
+        display: none;
+    }
+    #ud_tab label {
+        display: block;
+        float: left;
+        width: 25%;
+        color: #666;
+        font-size: 20px;
+        padding: 5%;
+        font-weight: normal;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        background: #252a34;
+    }
+    #ud_tab .ud_content {
+        background: #fff;
+        width: 90%;
+        display: none;
+        padding: 5%;
+        float: left;
+        font-size: 1.5rem;
+    }
+    #ud_tab .ud_content h3 {
+        margin: 0;
+        padding: 0 0 5% 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 1000;
+    }
+    #ud_tab .ud_content p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        color: #666;
+        line-height: 25px;
+        word-spacing: 3px;
+    }
+    #ud_tab [id^="tab"]:checked+label {
+        background: #ff2e63;
+        color: #fff;
+    }
+    #tab1:checked~#ud_tab-content1, #tab2:checked~#ud_tab-content2, #tab3:checked~#ud_tab-content3, #tab4:checked~#ud_tab-content4 {
+        display: block;
+    }
+}

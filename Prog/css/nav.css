@@ -1,0 +1,108 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	background: #fff;
+}
+.logo{
+    position: fixed;
+    top: 2rem;
+    left: 2.5rem;
+    z-index: 3;
+    width: 5rem;
+    height: 5rem;
+}
+
+svg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+    width: 30rem;
+    z-index: 1;
+}
+
+#sidebarinnline {
+	transition: all 250ms;
+	cursor: pointer;
+}
+
+.logo {
+	position: fixed;
+	top: 2rem;
+	left: 2.5rem;
+	z-index: 3;
+	width: 5rem;
+	height: 5rem;
+}
+
+aside {
+	transition: all 250ms;
+	position: fixed;
+	top: 0;
+	left: -20rem;
+	bottom: 0;
+	z-index: 2;
+	width: 30rem;
+	cursor: pointer;
+}
+
+aside .cta {
+	position: absolute;
+	top: 50%;
+    right: 1.5rem;
+	transform: rotate(-90deg);
+	font-size: 2rem;
+	color: #ffffff;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 3rem;
+	transition: all 350ms;
+}
+
+aside.open-sidebar {
+	left: 0;
+}
+
+aside.open-sidebar nav {
+	opacity: 1;
+}
+
+aside.open-sidebar .cta {
+	opacity: 0;
+}
+
+aside nav {
+	margin: 20rem 0 0 0;
+	padding: 0;
+	width: 100%;
+	opacity: 1;
+}
+
+aside nav ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+aside nav ul li {
+	margin: 0;
+	padding: 0.5rem 0 0.5rem 0;
+	list-style: none;
+	width: 100%;
+	text-align: center;
+}
+
+aside nav ul li a {
+	transition: all 350ms;
+	text-decoration: none;
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+}
+
+aside nav ul li a:hover {
+	color: #1b2431;
+}
